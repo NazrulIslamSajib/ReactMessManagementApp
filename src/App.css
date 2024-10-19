@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh; /* Full height of the viewport */
+  background-image: url("Cozy empty canteen interior cartoon illustration.jpg"); /* Change to your image path */
+  background-size: cover; /* Cover the entire screen */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  display: flex; /* Enable flexbox */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+.container {
+  max-width: 800px; /* Maximum width */
+  width: 90%; /* Full width on small screens */
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center text */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.login-form,
+.member-form,
+.vuya-bill {
+  display: flex;
+  flex-direction: column;
+  margin: 20px; /* Reduced margin for better appearance */
+} 
+
+label {
+  margin: 5px 0;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.member-table,
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.member-table th,
+.result-table th,
+.member-table td,
+.result-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.member-table th,
+.result-table th {
+  background-color: #f1f1f1;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.download-button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    max-width: 95%; /* Full width for tablets */
+    padding: 15px; /* Reduced padding for smaller screens */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Slightly smaller title */
+  }
+
+  input,
+  button {
+    font-size: 0.9rem; /* Smaller input and button font sizes */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px; /* Further reduced padding for mobile */
+  }
+
+  h1 {
+    font-size: 1.2rem; /* Smaller title for mobile */
+  }
+
+  input,
+  button {
+    font-size: 0.8rem; /* Smaller input and button font sizes */
+  }
+}
